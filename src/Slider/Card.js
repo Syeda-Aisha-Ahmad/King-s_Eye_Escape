@@ -5,6 +5,7 @@ import { motion, AnimatePresence, useMotionValue, useTransform } from 'framer-mo
 
 function Card(props) {
   const x = useMotionValue(0)
+  const y = useMotionValue(0)
   const scale = useTransform(x, [-150, 0, 150], [0.5, 1, 0.5])
   const rotate = useTransform(x, [-150, 0, 150], [-45, 0, 45], {
       clamp: false,
@@ -12,7 +13,7 @@ function Card(props) {
 
 
   function handleDragEnd(event, info) {
-      if (info.offset.x < -200) {
+      if (info.offset.x < -100) {
           props.setExitX(-250)
           if (props.index  < 7 ) {
             props.setIndex(props.index + 1)
@@ -20,7 +21,7 @@ function Card(props) {
             props.setIndex(0)
           }
       }
-      if (info.offset.x > 200) {
+      if (info.offset.x > 100) {
           props.setExitX(250)
           if (props.index  < 7 ) {
             props.setIndex(props.index + 1)
@@ -35,6 +36,7 @@ function Card(props) {
           className="w-full h-full absolute top-0"
           style={{
               x: x,
+              y: y,
               rotate: rotate,
               cursor: "grab",
           }}
@@ -104,7 +106,7 @@ export default function CardSlider(props) {
                       setExitX={setExitX}
                       index={index}
                       setIndex={setIndex}
-                      drag="x"
+                      drag
                   />
               </AnimatePresence>
           </motion.div>
