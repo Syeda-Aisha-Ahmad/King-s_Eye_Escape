@@ -62,7 +62,7 @@ function Card(props) {
                   scale: scale,
               }}
           >
-            <img src={`${props.index}.jpeg`} className="select-none w-auto h-2/5 pointer-events-none px-3 rounded-lg z-10" />
+            <img src={`${props.index}.jpeg`} alt="Yelp Image" className="select-none w-auto h-2/5 pointer-events-none px-3 rounded-lg z-10" />
             <h1 className="select-none text-center text-white bold text-2xl px-3 py-3 pointer-events-none">{YelpReviews[props.index].name}</h1>
             <p className="select-none h-20 text-center text-justify text-white px-3 pointer-events-none">{YelpReviews[props.index].post}</p>
             <a href="https://m.yelp.com/biz/kings-eye-escape-westminster">

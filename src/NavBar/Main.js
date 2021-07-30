@@ -65,12 +65,12 @@ const Main = () => {
           </motion.div>
         </div>
         <div className={tab} >
-          <Link to="/escape_rooms" onClick={() => openTab()}>
           <motion.div animate={isOpen ? "open" : "closed"} variants={variants}  whileTap={{scale: 1}} transition={{type: "spring", delay: .2, default: {duration: .5}}}className="text-white text-4xl py-2 px-10 w-screen bg-black bg-opacity-75">
             <a href="tel:+1-714-379-5889" >
               Call Now
             </a>
           </motion.div>
+          <Link to="/escape_rooms" onClick={() => openTab()}>
             <motion.div animate={isOpen ? "open" : "closed"} variants={variants}  whileTap={{scale: 1}} transition={{type: "spring", delay: .2, default: {duration: .5}}} className="text-white text-4xl py-2 px-10 w-screen bg-black bg-opacity-75">
               Escape Rooms
             </motion.div>

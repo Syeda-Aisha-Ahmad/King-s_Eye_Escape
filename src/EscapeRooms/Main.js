@@ -10,12 +10,20 @@ const EscapeRooms = [
   {
     img: "TheHarvest.jpeg",
     title: "The Harvest",
-    body: `An emergent disease dubbed "The Illness" has launched the world into chaos. In order to increase your chances of survival, you joined an elite team of looters. You heard rumors of a big score and followed them to a warehouse deep inside Scavenger City.  Come find out what it really means to SURVIVE!`
+    body: `An emergent disease dubbed "The Illness" has launched the world into chaos. In order to increase your chances of survival, you joined an elite team of looters. You heard rumors of a big score and followed them to a warehouse deep inside Scavenger City.  Come find out what it really means to SURVIVE!`,
+    players: "2-8/Recommended: 4-6",
+    time: "60 Minutes",
+    difficulty: "Difficulty: 5 out of 5",
+    genre: "Post Apocalyptic / Survival"
   },
   {
     img: "TheXtraction.jpeg",
-    title: "The X-traction",
-    body: `A mysterious figure linked to violent uprisings across the nation has captured a member of your Special Ops Unit. Now you must find and safely extract your fellow agent before their villanous plans play out. Will your operation be successful or will you end up in The Aftermath?`
+    title: "The Xtraction",
+    body: `A mysterious figure linked to violent uprisings across the nation has captured a member of your Special Ops Unit. Now you must find and safely extract your fellow agent before their villanous plans play out. Will your operation be successful or will you end up in The Aftermath?`,
+    players: "2-5",
+    time: "60 Minutes",
+    difficulty: "Difficulty: 4 out of 5",
+    genre: "Rescue Mission"
   }
 ];
 
@@ -53,7 +61,7 @@ const Main = () => {
         <h1 className="text-white text-center bg-black text-2xl md:text-4xl xl:text-6xl">Our Escape Rooms</h1>
         <div className="bg-black border-b-4 w-40 py-3 self-center xl:w-2/4 xl:mb-6" />
         <div className="flex flex-col bg-black xl:flex-row">
-          ${EscapeRooms.map((room, index) => {
+          {EscapeRooms.map((room, index) => {
             return (
                 <EscapeRoom room={room} key={index}/>
             )
