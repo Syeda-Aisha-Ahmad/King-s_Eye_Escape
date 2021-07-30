@@ -19,7 +19,7 @@ const Main = () => {
   }
 
   const variants = {
-    open : {x : 0, scale: 1.2},
+    open : {x : 0, scale: 1},
     closed : {x : "200%", scale: 1}
   }
 
@@ -66,6 +66,11 @@ const Main = () => {
         </div>
         <div className={tab} >
           <Link to="/escape_rooms" onClick={() => openTab()}>
+          <motion.div animate={isOpen ? "open" : "closed"} variants={variants}  whileTap={{scale: 1}} transition={{type: "spring", delay: .2, default: {duration: .5}}}className="text-white text-4xl py-2 px-10 w-screen bg-black bg-opacity-75">
+            <a href="tel:+1-714-379-5889" >
+              Call Now
+            </a>
+          </motion.div>
             <motion.div animate={isOpen ? "open" : "closed"} variants={variants}  whileTap={{scale: 1}} transition={{type: "spring", delay: .2, default: {duration: .5}}} className="text-white text-4xl py-2 px-10 w-screen bg-black bg-opacity-75">
               Escape Rooms
             </motion.div>

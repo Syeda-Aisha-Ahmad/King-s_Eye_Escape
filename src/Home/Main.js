@@ -48,7 +48,7 @@ const Main = () => {
     }}
   >
       <Helmet>
-        <title>King's Eye Escape - Westminster/Orange County</title>
+        <title>King's Eye Escape - Orange County Escape Room</title>
         <meta name="description" content="Orange County's Newest Spot for Adrenaline-Pumping Fun! Escape rooms and Axe Throwing All-In-One Private Facility! Find yourself fighting to survive in a post-apocalyptic fantasy world." />
         <meta name="keywords" content="Escape room Orange County, Escape Rooms Orange County, Axe Throwing Orange County, Ax Throwing Orange County, Escape room OC, Escape Rooms OC, Axe Throwing OC, Ax Throwing OC, Escape room Westminster, Escape Rooms Westminster, Axe Throwing Westminster, Ax Throwing Westminster, Team Building, Family Fun, Socal" />
       </Helmet>
