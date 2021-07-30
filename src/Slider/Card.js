@@ -15,10 +15,10 @@ function Card(props) {
   function handleDragEnd(event, info) {
       if (info.offset.x < -100) {
           props.setExitX(-250)
-          if (props.index  < 7 ) {
-            props.setIndex(props.index + 1)
+          if (props.index  > 0 ) {
+            props.setIndex(props.index - 1)
           } else {
-            props.setIndex(0)
+            props.setIndex(7)
           }
       }
       if (info.offset.x > 100) {
