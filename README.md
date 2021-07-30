@@ -1,9 +1,5 @@
-# ReactBoilerplate
-An Express, React, Babel, Webpack boilerplate.
+#KingsEyeEscape v.2
 
-Assuming you're running node, here are the steps.
-
-Steps:
 
   1. npm install
   2. npm build
