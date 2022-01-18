@@ -45,7 +45,7 @@ const Main = () => {
           <li className="text-white my-2 text-justify">King’s Eye Escape is located 2 minutes off the 405 and 5 minutes off the 22 in Westminster California.</li>
           <li className="text-white my-2 text-justify">We’re in Westminster Center, right next to the Regency Movie Theaters, Baskin Robbins, L*L Hawaiian BBQ, and Tisane Tea bar.</li>
           <li className="text-white my-2 text-justify">We’re 5 minutes away from the brand new Rodeo 39, an amazing indoor/outdoor dining facility that’s similar to Irvine Spectrum and Anaheim Packing District.</li>
-          <li className="text-white my-2 text-justify">Please call to book anytime before open hours.</li>
+          <li className="text-white my-2 text-justify">Call to Reserve Slot outside of Open Hours.</li>
         </ul>
         <div className="md:flex md:flex-col md:justify-center md:items-center md:w-screen">
           <Details />
