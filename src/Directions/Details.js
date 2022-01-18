@@ -8,7 +8,11 @@ const Details = ({ details }) => {
     <div className="flex flex-col">
       <div className="self-start flex flex-row justify-start content-center pl-5 ">
         <FontAwesomeIcon className="bg-blue-400 rounded-full hover:bg-blue-600" icon={faStopwatch} size='1x'style={{ color: 'white', marginBottom: '25px', marginTop: '25px', width: '30px', height: '30px' , padding: "5px"}} />
-        <p className="text-white self-center px-5" >Open 7 days a week 10:00am to 12:00am</p>
+        <div className="flex flex-col justify-center content-center self-center">
+          <p className="text-white px-5" >Open 7 days a week</p>
+          <p className="text-white px-5" >Mon - Thur 2:00pm to 10:30pm</p>
+          <p className="text-white px-5" >Fri - Sun 12:00pm to Midnight</p>
+        </div>
       </div>
       <a href="tel:+1-714-379-5889" className="self-start flex flex-row justify-start content-center pl-5 ">
         <FontAwesomeIcon className="bg-blue-400 rounded-full hover:bg-blue-600" icon={faMobileAlt} size='1x'style={{ color: 'white', marginBottom: '25px', marginTop: '25px', width: '30px', height: '30px' , padding: "5px"}} />
@@ -20,7 +24,7 @@ const Details = ({ details }) => {
       </a>
       <a href="mailto: service@kingseyeescape.com" className="self-start flex flex-row justify-start content-center pl-5 ">
         <FontAwesomeIcon className="bg-blue-400 rounded-full hover:bg-blue-600" icon={faEnvelope} size='1x'style={{ color: 'white', marginBottom: '25px', marginTop: '25px', width: '30px', height: '30px' , padding: "5px"}} />
-        <p className="text-white self-center px-5" >service@kingseyeesape.com</p>
+        <p className="text-white self-center px-5" >service@kingseyeescape.com</p>
       </a>
     </div>
   );

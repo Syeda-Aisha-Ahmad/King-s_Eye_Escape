@@ -19,7 +19,7 @@ const EscapeRooms = [
   {
     img: "TheXtraction.jpeg",
     title: "The Xtraction",
-    body: `A mysterious figure linked to violent uprisings across the nation has captured a member of your Special Ops Unit. Now you must find and safely extract your fellow agent before their villanous plans play out. Will your operation be successful or will you end up in The Aftermath?`,
+    body: `A mysterious figure linked to violent uprisings across the nation has captured a member of your Special Ops Unit. Now you must find and safely extract your fellow agent before their villainous plans play out. Will your operation be successful or will you end up in The Aftermath?`,
     players: "2-5",
     time: "60 Minutes",
     difficulty: "Difficulty: 4 out of 5",
