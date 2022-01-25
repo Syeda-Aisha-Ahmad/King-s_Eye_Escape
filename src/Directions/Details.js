@@ -10,8 +10,8 @@ const Details = ({ details }) => {
         <FontAwesomeIcon className="bg-blue-400 rounded-full hover:bg-blue-600" icon={faStopwatch} size='1x'style={{ color: 'white', marginBottom: '25px', marginTop: '25px', width: '30px', height: '30px' , padding: "5px"}} />
         <div className="flex flex-col justify-center content-center self-center">
           <p className="text-white px-5" >Open 7 days a week</p>
-          <p className="text-white px-5" >Mon - Thur 2:00pm to 10:30pm</p>
-          <p className="text-white px-5" >Fri - Sun 12:00pm to Midnight</p>
+          <p className="text-white px-5" >Mon - Thur 2:00PM to 10:30PM</p>
+          <p className="text-white px-5" >Fri - Sun 11:00AM to 12:45AM(Next Day)</p>
         </div>
       </div>
       <a href="tel:+1-714-379-5889" className="self-start flex flex-row justify-start content-center pl-5 ">
