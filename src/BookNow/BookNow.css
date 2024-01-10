@@ -1,0 +1,36 @@
+.bookNowButton {
+    box-shadow: 0px 1px 0px 0px #004aac;
+    background: linear-gradient(to bottom, #3b82f6 5%, #004aac 100%);
+    background-color: #49a1fa;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #5b6178;
+}
+
+.bookNowButton:hover {
+    background: linear-gradient(to bottom, #004aac 5%, #3b82f6 100%);
+    background-color: #044ed6;
+}
+
+
+
+.reserve-btn {
+    background: linear-gradient(to bottom, #02ff39 5%, #106b03 100%);
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.reserve-btn:hover {
+    background: linear-gradient(to bottom, #138a03 5%, #00db30 100%);
+}

@@ -1,0 +1,101 @@
+.iconButton {
+    box-shadow: 0px 1px 0px 0px #004aac;
+    background: linear-gradient(to bottom, #3b82f6 5%, #004aac 100%);
+    background-color: #003b7e;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #e4dddd;
+    /* padding: 9px 26px; */
+    font-size: 15px;
+    /* width: 160px; */
+    font-weight: bold !important;
+    font-family: Arial;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #5b6178;
+}
+
+/* .iconButton:hover {
+    background: linear-gradient(to bottom, #004aac 5%, #3b82f6 100%);
+    background-color: #044ed6;
+} */
+
+.iconButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+.navButton {
+    box-shadow: 0px 1px 0px 0px #004aac;
+    background: linear-gradient(to bottom, #3b82f6 5%, #004aac 100%);
+    background-color: #003b7e;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #e4dddd;
+    padding: 10px 20px 8px 20px;
+    font-size: 13px;
+    font-weight: 700 !important;
+    width: 135px;
+    font-family: Arial;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #5b6178;
+}
+
+.navButton:hover {
+    background: linear-gradient(to bottom, #004aac 5%, #3b82f6 100%);
+    background-color: #044ed6;
+}
+
+.navButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.img-height {
+    height: 600px;
+    width: 100% !important;
+}
+
+
+
+.background-style {
+    background: linear-gradient(to right, rgba(0, 0, 24, 0.61),
+            rgba(0, 0, 0, 0.705)), url("../../build/1ce018537e816717a0d1d60d501fe3cf.jpeg");
+    background-size: cover;
+}
+
+.myButton {
+    box-shadow: 0px 1px 0px 0px #004aac;
+    background: linear-gradient(to bottom, #3b82f6 5%, #004aac 100%);
+    /* box-shadow: 0px 1px 0px 0px #062446;
+    background: linear-gradient(to bottom, #004aac 5%, #062446 100%); */
+    background-color: #003b7e;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 9px 27px;
+    font-size: 16px;
+    width: 160px;
+    font-weight: 700 !important;
+    font-family: Arial;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #5b6178;
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #004aac 5%, #3b82f6 100%);
+    background-color: #044ed6;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.img-height {
+    height: 600px;
+    width: 100% !important;
+}

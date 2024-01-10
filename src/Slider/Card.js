@@ -1,115 +1,57 @@
 import React from 'react';
-import YelpReviews from './YelpReviews';
-import { motion, AnimatePresence, useMotionValue, useTransform } from 'framer-motion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import YelpReviews from './YelpReviews.js';
+import './Card.css';
+import "swiper/css";
+import 'swiper/css/pagination';
+
+import { Pagination } from 'swiper/modules';
 
 
-function Card(props) {
-  const x = useMotionValue(0)
-  const y = useMotionValue(0)
-  const scale = useTransform(x, [-150, 0, 150], [0.5, 1, 0.5])
-  const rotate = useTransform(x, [-150, 0, 150], [-45, 0, 45], {
-      clamp: false,
-  })
+const Card = () => {
+    return (
+        <div style={{ height: "750px" }} className="bg-card w-screen justify-center items-center pb-10 md:hidden">
+            <h1 className="text-white  text-center font-semibold text-3xl md:text-5xl xl:text-6xl xl:leading-relaxed pt-5">See Our<a className='text-blue-500' href="https://m.yelp.com/biz/kings-eye-escape-westminster"> Reviews</a></h1>
+            <div className="border-gray-100 border-b-4 w-9/12 md:w-7/12 lg:w-40 py-3 md:mb-5 self-center xl:w-2/4 xl:mb-6 mx-auto" />
+            <p className='text-xl text-center mt-5 font-semibold text-gray-200'><span className='text-blue-500 '>Swipe</span> To See More...</p>
+            <Swiper
+                pagination={{
+                    clickable: true,
+                }}
+                style={{
+                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                }}
+                modules={[Pagination]}
+            >
+
+                {YelpReviews.map((info, index) => {
+                    return (
 
 
-  function handleDragEnd(event, info) {
-      if (info.offset.x < -100) {
-          props.setExitX(-250)
-          if (props.index  > 0 ) {
-            props.setIndex(props.index - 1)
-          } else {
-            props.setIndex(7)
-          }
-      }
-      if (info.offset.x > 100) {
-          props.setExitX(250)
-          if (props.index  < 7 ) {
-            props.setIndex(props.index + 1)
-          } else {
-            props.setIndex(0)
-          }
-      }
-  }
+                        <SwiperSlide key={index}>
+                            <div key={index} className={`py-5 px-5 w-11/12 mx-auto mb-4 text-center md:text-left relative`}>
+                                <div className='mr-4 bg-gray-900 py-5 pc-4 rounded-xl mt-5'>
+                                    <div className='review-img '>
+                                        <img src={require(`../../build/${index}.jpeg`).default} alt="Yelp Image" className="select-none w-52 pointer-events-none px-5 rounded-xl  z-10" />
+                                    </div>
+                                    <div className=''>
+                                        <h3 className='text-2xl font-bold mb-5 mt-2 ml-5 text-white'>{info.name}</h3>
+                                        <p className='px-2'>{info.post}</p>
+                                    </div>
+                                </div>
+                                <a href="https://m.yelp.com/biz/kings-eye-escape-westminster">
+                                    <img src="yelp.png" className="absolute top-10 right-10 h-12 w-auto" />
+                                </a>
+                            </div>
+                        </SwiperSlide>
 
-  return (
-      <motion.div
-          className="w-full h-full absolute top-0"
-          style={{
-              x: x,
-              y: y,
-              rotate: rotate,
-              cursor: "grab",
-          }}
-          whileTap={{ cursor: "grabbing" }}
-          drag={props.drag}
-          dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
-          onDragEnd={handleDragEnd}
-          initial={props.initial}
-          animate={props.animate}
-          transition={props.transition}
-          exit={{
-              x: props.exitX,
-              opacity: 0,
-              scale: 0.5,
-              transition: { duration: 0.2 },
-          }}
-      >
-          <motion.div
-              className="w-full h-full flex flex-col justify-start items-start overflow-hidden border-gray-400 p-2 shadow-2xl"
-              style={{
-                  backgroundColor: "rgb(34,31,32)",
-                  borderRadius: 30,
-                  scale: scale,
-              }}
-          >
-            <img src={`${props.index}.jpeg`} alt="Yelp Image" className="select-none w-auto h-2/5 pointer-events-none px-3 rounded-lg z-10" />
-            <h1 className="select-none text-center text-white bold text-2xl px-3 py-3 pointer-events-none">{YelpReviews[props.index].name}</h1>
-            <p className="select-none h-20 text-center text-justify text-white px-3 pointer-events-none">{YelpReviews[props.index].post}</p>
-            <a href="https://m.yelp.com/biz/kings-eye-escape-westminster">
-              <img src="yelp.jpg" className="absolute top-10 right-3 h-12 w-auto" />
-            </a>
-          </motion.div>
-      </motion.div>
-  )
+                    )
+                })}
+            </Swiper>
+        </div >
+    )
 }
 
-export default function CardSlider(props) {
-  const [index, setIndex] = React.useState(0)
-  const [exitX, setExitX] = React.useState("100%")
+export default Card;
 
-  return (
-      <div style={{height: "500px"}} className="bg-Directions flex w-screen justify-center items-center md:hidden">
-          <motion.div className="w-9/12 h-4/5 relative"
-          >
-              <AnimatePresence initial={false}>
-                  <Card
-                      key={index + 1}
-                      initial={{ scale: 0, xy: 150, opacity: 0 }}
-                      animate={{ scale: 0.75, y: 100, opacity: 0.5 }}
-                      transition={{
-                          scale: { duration: 0.2 },
-                          opacity: { duration: 0.4 },
-                      }}
-                      index={index + 1}
-                      setIndex={setIndex}
-                  />
-                  <Card
-                      key={index}
-                      animate={{ scale: 1, y: 0, opacity: 1 }}
-                      transition={{
-                          type: "spring",
-                          stiffness: 300,
-                          damping: 20,
-                          opacity: { duration: 0.2 },
-                      }}
-                      exitX={exitX}
-                      setExitX={setExitX}
-                      index={index}
-                      setIndex={setIndex}
-                      drag
-                  />
-              </AnimatePresence>
-          </motion.div>
-      </div>
-  )
-}
+

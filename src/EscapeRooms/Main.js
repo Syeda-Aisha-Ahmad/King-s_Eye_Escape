@@ -24,7 +24,7 @@ const EscapeRooms = [
     time: "60 Minutes",
     difficulty: "Difficulty: 4 out of 5",
     genre: "Rescue Mission"
-  }
+  },
 ];
 
 const Main = () => {
@@ -36,39 +36,39 @@ const Main = () => {
   useEffect(() => {
     gtag('js', new Date());
     gtag('config', 'UA-159548226-1', {
-      'page_title' : 'Directions',
+      'page_title': 'Directions',
       'page_path': '/directions'
     });
   }, [])
 
   return (
     <motion.div
-    initial={{
-      opacity: 0,
-    }}
-    animate={{
-      opacity: 1,
-    }}
-    exit={{
-      opacity: 0,
-    }}
-  >
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      exit={{
+        opacity: 0,
+      }}
+    >
       <Helmet>
         <title>Escape Rooms</title>
         <meta name="description" content="Find yourself fighting to survive in a post-apocalyptic fantasy world" />
       </Helmet>
       <div className="bg-black flex flex-col xl:h-full">
-        <h1 className="text-white text-center bg-black text-2xl md:text-4xl xl:text-6xl">Our Escape Rooms</h1>
-        <div className="bg-black border-b-4 w-40 py-3 self-center xl:w-2/4 xl:mb-6" />
+        <h1 className="text-white text-center font-semibold bg-black mt-10 text-3xl md:text-4xl xl:text-6xl">Our <span className='text-blue-500'>Escape Rooms</span></h1>
+        <div className="bg-black border-b-4 w-40 pt-2 pb-3 mb-5 self-center xl:w-2/4 xl:mb-6" />
         <div className="flex flex-col bg-black xl:flex-row">
           {EscapeRooms.map((room, index) => {
             return (
-                <EscapeRoom room={room} key={index}/>
+              <EscapeRoom room={room} key={index} />
             )
           })}
         </div>
       </div>
-      <Link to='/book_now'>
+      <Link to='/resova'>
         <BookNow />
       </Link>
     </motion.div>

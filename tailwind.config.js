@@ -18,9 +18,9 @@ module.exports = {
     },
     extend: {
       backgroundImage: theme => ({
-        'AxeLoungeWallpaper' : "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, .6)), url('AxeLoungeWallpaper.jpeg')",
-        'Directions' : "url('DirectionsBackground.jpeg')",
-        'LootWarsHarvest' : "url(LootWarsHarvest.jpeg)"
+        'AxeLoungeWallpaper': "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, .6)), url('AxeLoungeWallpaper.jpeg')",
+        'Directions': "url('DirectionsBackground.jpeg')",
+        'LootWarsHarvest': "url(LootWarsHarvest.jpeg)"
       })
     },
     screens: {
@@ -985,5 +985,5 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }

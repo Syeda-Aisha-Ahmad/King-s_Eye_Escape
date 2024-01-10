@@ -7,6 +7,11 @@ import EscapeRoom from '../EscapeRooms/EscapeRoom';
 import BookNow from '../BookNow/Main';
 import CovidList from './CovidList';
 import Card from '../Slider/Card';
+import AxeThrowing from './axeThrowing';
+
+import bannerImg from '../../build/10630f44942c07c10045eb41cb7565f8.jpeg'
+import './Main.css';
+import RageRoom from './RageRoom';
 
 const EscapeRooms = [
   {
@@ -38,60 +43,76 @@ const Main = () => {
   useEffect(() => {
     gtag('js', new Date());
     gtag('config', 'UA-159548226-1', {
-      'page_title' : 'Directions',
+      'page_title': 'Directions',
       'page_path': '/directions'
     });
   }, [])
 
   return (
     <motion.div
-    initial={{
-      opacity: 0,
-    }}
-    animate={{
-      opacity: 1,
-    }}
-    exit={{
-      opacity: 0,
-    }}
-  >
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      exit={{
+        opacity: 0,
+      }}
+    >
       <Helmet>
         <title>King's Eye Escape - Orange County Escape Room</title>
         <meta name="description" content="Orange County's Newest Spot for Adrenaline-Pumping Fun! Escape rooms and Axe Throwing All-In-One Private Facility! Find yourself fighting to survive in a post-apocalyptic fantasy world." />
         <meta name="keywords" content="Escape room Orange County, Escape Rooms Orange County, Axe Throwing Orange County, Ax Throwing Orange County, Escape room OC, Escape Rooms OC, Axe Throwing OC, Ax Throwing OC, Escape room Westminster, Escape Rooms Westminster, Axe Throwing Westminster, Ax Throwing Westminster, Team Building, Family Fun, Socal" />
       </Helmet>
       <div className="bg-black flex flex-col xl:h-full">
-        <div className="w-full bg-white py-3 flex flex-col justify-center">
-          <h1 className="text-black text-center text-2xl md:text-4xl xl:text-6xl xl:leading-relaxed">Do you HAVE what it takes?</h1>
-          <div className="border-black border-b-4 w-40 py-3 self-center xl:w-2/4 xl:mb-6" />
-          <p className='px-10 text-sm py-3 text-gray-600 md:w-3/4 self-center'>Take on Orange County's most challenging and engaging escape rooms. Jump into an epic post-apocalyptic game in our highly rated series, Loot Wars: The Harvest. The adventure doesn't stop there, learn about the events leading up to The Harvest in Loot Wars: The Extraction.  Our thrilling experiences don't stop at escape rooms.
-          We also provide expert coaching for Axe Throwing inside a Private Lounge, only for you and the people you know!
-          Find out why people keep coming to us to have the most fun in Westminster!</p>
+
+        <div className="w-full bg-black flex flex-col justify-center pt-14 pb-10 md:pb-16 background-style">
+          <h1 className="text-white text-center font-semibold text-3xl md:text-5xl xl:text-6xl xl:leading-relaxed">What is an <span className='text-blue-500'>Escape Room?</span></h1>
+          <div className="border-gray-100 border-b-4 w-9/12 md:w-7/12 lg:w-40 py-2 lg:py-0 md:mb-2 self-center xl:w-2/4 xl:mb-2" />
+          <p className='px-5 md:px-10 text-base md:text-xl lg:pt-5 md:py-3 text-white md:w-10/12 text-center mx-auto leading-relaxed hidden md:grid'>Escape rooms are real-life adventures where you and your crew (2-10 players) get locked in and must crack codes, solve puzzles, and follow clues to break free. Think of it like a live-action video game, but the clock's ticking (60 minutes).
+
+            Ready for a heart-pounding, adrenaline-fueled experience? Team up with friends, family, or co-workers, and immerse yourself in a 60-minute challenge that leads to unlimited possibilities. Can you beat the clock and emerge victorious? Let the escapades begin!
+          </p>
+
+          <p className='px-5 md:px-10 text-base md:text-xl pt-5 pb-2 md:py-3 text-white md:w-10/12 text-center mx-auto leading-relaxed grid md:hidden lg:hidden'>Escape rooms are real-life adventures where you and your crew (2-10 players) get locked in and must crack codes, solve puzzles, and follow clues to break free.
+
+            Ready for a heart-pounding, adrenaline-fueled experience? Immerse yourself in a 60-minute challenge with friends, family or co-workers. Click to book your adventure!
+          </p>
+
+
+          <Link className='text-center mt-3' to="/resova">
+            <button className='text-white font-bold myButton mx-auto'>BOOK NOW</button>
+          </Link>
+
         </div>
-        <h1 className="text-white pt-3 text-center bg-black text-2xl md:text-4xl xl:text-6xl xl:leading-relaxed">Our Escape Rooms</h1>
-        <div className="bg-black border-b-4 w-40 py-3 self-center xl:w-2/4 xl:mb-6" />
+
+
+        <h1 className="text-white md:pt-12 text-center bg-black text-3xl md:text-5xl xl:text-6xl xl:leading-relaxed font-semibold">Our <span className='text-blue-500'>Escape Rooms</span></h1>
+        <div className="bg-black border-b-4 w-40 pt-3 md:py-3 self-center xl:w-2/4 xl:mb-6" />
         <div className="flex flex-col bg-black xl:flex-row">
-          ${EscapeRooms.map((room, index) => {
+          {EscapeRooms.map((room, index) => {
             return (
-                <EscapeRoom room={room} key={index}/>
+              <EscapeRoom room={room} key={index} />
             )
           })}
         </div>
       </div>
+
+      <AxeThrowing />
+      <RageRoom />
+
+
       <div className="text-center text-white bg-black flex justify-center">
-        <h1 className="text-white text-center text-2xl w-3/4 mb-2 md:hidden">
-          Check out Why People <a href="https://m.yelp.com/biz/kings-eye-escape-westminster" className="text-red-500 underline bold">
-            LOVE
-          </a> Us!!!
-        </h1>
+
       </div>
       <Card />
-      <h1 className="text-white text-center bg-black text-2xl underline md:text-4xl xl:text-6xl xl:py-10">Our Covid Guidelines</h1>
-      <CovidList />
-      <Link to='/book_now'>
+
+
+      <Link to='/resova'>
         <BookNow />
       </Link>
-    </motion.div>
+    </motion.div >
   )
 };
 

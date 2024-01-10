@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SafetyListItem from './SafetyListItem.js';
 
 const SafetyList = () => {
@@ -6,9 +7,10 @@ const SafetyList = () => {
     <>
       {List.map((res, index) => {
         return (
-          <SafetyListItem res={res} key={index}/>
+          <SafetyListItem res={res} key={index} />
         )
       })}
+
     </>
   );
 };

@@ -1,0 +1,16 @@
+.teambuilding-background {
+    background-image: linear-gradient(rgba(1, 1, 24, 0.733), rgba(0, 0, 0, 0.705)), url('../../build/o\ \(4\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.height-style {
+    height: 200px !important;
+    overflow: hidden;
+}
+
+.absolute-style {
+    right: 20px !important;
+    top: 24px !important;
+}
