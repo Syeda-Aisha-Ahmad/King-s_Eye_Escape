@@ -1,0 +1,63 @@
+.section-margin {
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.left-texts {
+    padding-top: 12%;
+}
+
+.img-size {
+    width: 100% !important;
+    height: 600px;
+}
+
+.height {
+    height: 370px !important;
+    /* left: 40px; */
+
+    /* width: 90%; */
+}
+
+.card-text {
+    position: absolute !important;
+    bottom: 10%;
+    left: 22%;
+}
+
+.card-text-small {
+    position: absolute !important;
+    bottom: 35%;
+    right: 10%;
+}
+
+.img-width {
+    /* width: 400px; */
+    width: 80%;
+    border-radius: 20% !important;
+}
+
+.img-width-small {
+    width: 290px;
+    border-radius: 20% !important;
+}
+
+.texts {
+    position: absolute;
+    text-align: center !important;
+    right: 45%;
+    bottom: -14px;
+    /* top: 1px; */
+    color: rgb(198, 198, 198);
+    font-size: 35px;
+}
+
+.text-small {
+    position: absolute;
+    text-align: center !important;
+    right: 17%;
+    bottom: -14px;
+    /* top: 1px; */
+    color: rgb(198, 198, 198);
+    font-size: 25px;
+}

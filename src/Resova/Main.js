@@ -17,15 +17,15 @@ export default function Resova() {
   useEffect(() => {
     gtag('js', new Date());
     gtag('config', 'UA-159548226-1', {
-      'page_title' : 'resova',
+      'page_title': 'resova',
       'page_path': '/resova'
     });
   }, [])
 
   return (
     <>
-    <div id="resova-wrapper">
-    </div>
+      <div id="resova-wrapper">
+      </div>
     </>
   )
 }

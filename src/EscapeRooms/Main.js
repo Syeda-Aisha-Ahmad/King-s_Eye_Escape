@@ -11,7 +11,7 @@ const EscapeRooms = [
     img: "TheHarvest.jpeg",
     title: "The Harvest",
     body: `An emergent disease dubbed "The Illness" has launched the world into chaos. In order to increase your chances of survival, you joined an elite team of looters. You heard rumors of a big score and followed them to a warehouse deep inside Scavenger City.  Come find out what it really means to SURVIVE!`,
-    players: "2-8/Recommended: 4-6",
+    players: "2-10 (4-6 recommended)",
     time: "60 Minutes",
     difficulty: "Difficulty: 5 out of 5",
     genre: "Post Apocalyptic / Survival"
@@ -20,7 +20,7 @@ const EscapeRooms = [
     img: "TheXtraction.jpeg",
     title: "The Xtraction",
     body: `A mysterious figure linked to violent uprisings across the nation has captured a member of your Special Ops Unit. Now you must find and safely extract your fellow agent before their villainous plans play out. Will your operation be successful or will you end up in The Aftermath?`,
-    players: "2-5",
+    players: "2-7 (3-5 recommended)",
     time: "60 Minutes",
     difficulty: "Difficulty: 4 out of 5",
     genre: "Rescue Mission"

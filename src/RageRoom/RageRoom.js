@@ -39,7 +39,7 @@ const RageRoom = () => {
                 <div>
                     <h1 className="text-white  text-center text-3xl md:text-5xl mt-0 pb-2 pt-5 font-semibold">Our <span className='text-blue-500'>Rage Room</span></h1>
                     <div className="border-gray-200  border-b-4 w-9/12 md:w-7/12 lg:w-40 pt-3 mb-5 self-center xl:w-5/12 xl:mb-6 mx-auto" />
-                    <p className="w-11/12 md:w-3/5 px-3 md:mb-5 text-white text-center text-base md:text-xl md:leading-relaxed mx-auto mb-5">Are you feeling overwhelmed, upset, or just in need of a unique and exhilarating way to let off some steam? Look no further!
+                    <p className="w-11/12 md:w-3/5 px-3 md:mb-5 text-white text-center text-base md:text-xl md:leading-relaxed mx-auto mb-5">Are you looking for a unique and exhilarating way to let off some steam? Look no further!
                     </p>
                     <div className='mt-2 mx-auto text-center mb-5 md:mb-16'>
                         <Link className='text-center mt-2 mb-10' to="/resova">

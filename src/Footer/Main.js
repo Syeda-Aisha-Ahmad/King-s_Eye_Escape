@@ -72,6 +72,10 @@ const Main = () => {
               <Link className='hover:text-gray-400 transition-all delay-100 pb-2 border-b hover:border-gray-400 text-base md:text-lg' to="/rage_room">
                 Rage Room
               </Link>
+
+              <Link className='hover:text-gray-400 transition-all delay-100 pb-2 border-b hover:border-gray-400 text-base md:text-lg' to="/gift_certificates">
+                Gift Certificates
+              </Link>
             </div>
           </div>
 
@@ -81,6 +85,7 @@ const Main = () => {
               <a className='hover:text-gray-400 transition-all delay-100 pb-2 border-b hover:border-gray-400 text-base md:text-lg' href="https://www.facebook.com/KingsEyeEscapeRoom">Facebook</a>
               <a className='hover:text-gray-400 transition-all delay-100 pb-2 border-b hover:border-gray-400 text-base md:text-lg' href="https://www.instagram.com/KingsEyeEscape">Instagram</a>
               <a className='hover:text-gray-400 transition-all delay-100 pb-2 border-b hover:border-gray-400 text-base md:text-lg' href="https://www.yelp.com/biz/kings-eye-escape-and-axe-westminster-6">Yelp</a>
+              <a className='hover:text-gray-400 transition-all delay-100 pb-2 border-b hover:border-gray-400 text-base md:text-lg' href="https://www.tiktok.com/@kingseyeescape?_t=8ivDkwAP5EU&_r=1">Tiktok</a>
             </div>
           </div>
         </footer>

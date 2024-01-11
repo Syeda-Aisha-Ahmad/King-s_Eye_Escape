@@ -80,12 +80,6 @@ const Main = () => {
             </motion.div>
           </Link>
 
-          {/* <Link to="/directions" onClick={() => openTab()}>
-            <motion.div animate={isOpen ? "open" : "closed"} variants={variants} whileTap={{ scale: 1 }} transition={{ type: "spring", delay: .4, default: { duration: .5 } }} className="text-white text-xl py-2 px-10 w-screen bg-black bg-opacity-75">
-              Directions
-            </motion.div>
-          </Link> */}
-
           <Link to="/rage_room" onClick={() => openTab()}>
             <motion.div animate={isOpen ? "open" : "closed"} variants={variants} whileTap={{ scale: 1 }} transition={{ type: "spring", delay: .4, default: { duration: .5 } }} className="text-white text-xl py-2 px-10 w-screen bg-black bg-opacity-75">
               <span className='text-blue-500 font-semibold'>Rage</span> Room
@@ -104,6 +98,13 @@ const Main = () => {
               <span className='text-blue-500 font-semibold'>Team</span> Building
             </motion.div>
           </Link>
+
+          <Link to="/gift_certificates" onClick={() => openTab()}>
+            <motion.div animate={isOpen ? "open" : "closed"} variants={variants} whileTap={{ scale: 1 }} transition={{ type: "spring", delay: .4, default: { duration: .5 } }} className="text-white text-xl py-2 px-10 w-screen bg-black bg-opacity-75">
+              <span className='text-blue-500 font-semibold'>Gift</span> Certificates
+            </motion.div>
+          </Link>
+
           <Link to="/resova" className='' onClick={() => openTab()}>
             <motion.div animate={isOpen ? "open" : "closed"} variants={variants} whileTap={{ scale: 1 }} transition={{ type: "spring", delay: .5, default: { duration: .5 } }} className="text-white px-10  w-screen bg-black bg-opacity-75 py-3">
               <Link className='text-center text-white myButton mx-auto' to="/resova">
@@ -150,6 +151,12 @@ const Main = () => {
             <Link to="/team-building">
               <div className="text-white hover:text-blue-400 transition-all delay-100">
                 Team Building
+              </div>
+            </Link>
+
+            <Link to="/gift_certificates">
+              <div className="text-white hover:text-blue-400 transition-all delay-100">
+                Gift Certificates
               </div>
             </Link>
 

@@ -15,12 +15,13 @@ import FAQ from './FAQ/FAQ';
 import TeamBuilding from './TeamBuilding/TeamBuilding';
 import './App.css';
 import RageRoom from './RageRoom/RageRoom';
+import GiftCards from './GiftCards/GiftCards';
 
 const App = () => {
 
 
   return (
-    <div className='size'>
+    <div className=''>
       <Nav />
       <AnimatePresence exitBeforeEnter inital={false}>
         <Switch location={location} key={location.pathname}>
@@ -44,6 +45,9 @@ const App = () => {
           </Route>
           <Route path="/rage_room">
             <RageRoom />
+          </Route>
+          <Route path="/gift_certificates">
+            <GiftCards />
           </Route>
           <Route path="/book_now">
             <BookNow />

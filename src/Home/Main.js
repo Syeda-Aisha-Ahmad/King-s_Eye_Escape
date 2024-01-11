@@ -18,7 +18,7 @@ const EscapeRooms = [
     img: "TheHarvest.jpeg",
     title: "The Harvest",
     body: `An emergent disease dubbed "The Illness" has launched the world into chaos. In order to increase your chances of survival, you joined an elite team of looters. You heard rumors of a big score and followed them to a warehouse deep inside Scavenger City.  Come find out what it really means to SURVIVE!`,
-    players: "2-8/Recommended: 4-6",
+    players: "2-10 (4-6 recommended)",
     time: "60 Minutes",
     difficulty: "Difficulty: 5 out of 5",
     genre: "Post Apocalyptic / Survival"
@@ -27,7 +27,7 @@ const EscapeRooms = [
     img: "TheXtraction.jpeg",
     title: "The Xtraction",
     body: `A mysterious figure linked to violent uprisings across the nation has captured a member of your Special Ops Unit. Now you must find and safely extract your fellow agent before their villanous plans play out. Will your operation be successful or will you end up in The Aftermath?`,
-    players: "2-5",
+    players: "2-7 (3-5 recommended)",
     time: "60 Minutes",
     difficulty: "Difficulty: 4 out of 5",
     genre: "Rescue Mission"
@@ -70,12 +70,12 @@ const Main = () => {
         <div className="w-full bg-black flex flex-col justify-center pt-14 pb-10 md:pb-16 background-style">
           <h1 className="text-white text-center font-semibold text-3xl md:text-5xl xl:text-6xl xl:leading-relaxed">What is an <span className='text-blue-500'>Escape Room?</span></h1>
           <div className="border-gray-100 border-b-4 w-9/12 md:w-7/12 lg:w-40 py-2 lg:py-0 md:mb-2 self-center xl:w-2/4 xl:mb-2" />
-          <p className='px-5 md:px-10 text-base md:text-xl lg:pt-5 md:py-3 text-white md:w-10/12 text-center mx-auto leading-relaxed hidden md:grid'>Escape rooms are real-life adventures where you and your crew (2-10 players) get locked in and must crack codes, solve puzzles, and follow clues to break free. Think of it like a live-action video game, but the clock's ticking (60 minutes).
+          <p className='px-5 md:px-10 text-base md:text-xl lg:pt-5 md:py-3 text-white md:w-10/12 text-center mx-auto leading-relaxed hidden md:grid'>Escape rooms are real-life adventures where you and your crew must investigate your surroundings, follow clues, crack codes, solve puzzles, and overcome your challenges. Think of it like a live-action video game, but the clock's ticking (60 minutes).
 
             Ready for a heart-pounding, adrenaline-fueled experience? Team up with friends, family, or co-workers, and immerse yourself in a 60-minute challenge that leads to unlimited possibilities. Can you beat the clock and emerge victorious? Let the escapades begin!
           </p>
 
-          <p className='px-5 md:px-10 text-base md:text-xl pt-5 pb-2 md:py-3 text-white md:w-10/12 text-center mx-auto leading-relaxed grid md:hidden lg:hidden'>Escape rooms are real-life adventures where you and your crew (2-10 players) get locked in and must crack codes, solve puzzles, and follow clues to break free.
+          <p className='px-5 md:px-10 text-base md:text-xl pt-5 pb-2 md:py-3 text-white md:w-10/12 text-center mx-auto leading-relaxed grid md:hidden lg:hidden'>Escape rooms are real-life adventures where you and your crew must investigate your surroundings, follow clues, crack codes, solve puzzles, and overcome your challenges.
 
             Ready for a heart-pounding, adrenaline-fueled experience? Immerse yourself in a 60-minute challenge with friends, family or co-workers. Click to book your adventure!
           </p>

@@ -97,7 +97,7 @@ const Main = () => {
 
 const AxeThrowing = [
   "Ages 8+ (with supervision)",
-  "From 2 to 8 players",
+  "Up to 10 participants",
   "$50pp/1hr for 2 players",
   "$40pp/1hr for 3+ players",
   "Safety training included",
