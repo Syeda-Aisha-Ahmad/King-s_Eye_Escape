@@ -180,7 +180,7 @@ const TeamBuilding = () => {
 
 
                                         <div className={`text-xl ${clicked ? '' : 'h-28 overflow-hidden'}`}>
-                                            <p >{info.text}</p>
+                                            <p className='p-text-sstyle'>{info.text}</p>
                                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 pl-5">
                                                 {info?.images?.map((img, imgIndex) => (
                                                     <img key={imgIndex} className="h-auto" src={img} alt={`Review Image ${imgIndex + 1}`} />

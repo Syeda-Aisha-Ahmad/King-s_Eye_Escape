@@ -36,7 +36,7 @@ const Card = () => {
                                     </div>
                                     <div className=''>
                                         <h3 className='text-2xl font-bold mb-5 mt-2 ml-5 text-white'>{info.name}</h3>
-                                        <p className='px-2'>{info.post}</p>
+                                        <p className='px-2 text-sstyle'>{info.post}</p>
                                     </div>
                                 </div>
                                 <a href="https://m.yelp.com/biz/kings-eye-escape-westminster">
