@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../build/Logo.png'
 import GoogleMapModule from '../Directions/GoogleMapModule';
+import img from '../../build/map.png';
 import {
   withGoogleMap,
   GoogleMap,
@@ -41,16 +42,20 @@ const Main = () => {
 
           <div className='flex flex-col'>
             <h3 className='text-white text-xl font-semibold'>LOCATION</h3>
-            <div className='w-2/12'>
+            <a href="https://www.google.com/maps/place/King's+Eye+Escape/@33.7602943,-118.0105672,17z/data=!4m5!3m4!1s0x80dd29bc2f8c39a9:0x5fec90b71b27fafe!8m2!3d33.760483!4d-118.010439" target={"_blank"}>
+              <div className='w-full mt-7'>
 
-              {/* Here You have to remove the comment to see the map */}
+                <img src={img} alt="" />
 
-              {/* <MapWithAMarker
+                {/* Here You have to remove the comment to see the map */}
+
+                {/* <MapWithAMarker
                 containerElement={<div style={{ height: `400px` }} />}
                 mapElement={<div style={{ height: `100%` }} />}
               /> */}
-              {/* <GoogleMapModule /> */}
-            </div>
+                {/* <GoogleMapModule /> */}
+              </div>
+            </a>
           </div>
 
           <div className='flex flex-col'>
