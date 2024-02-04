@@ -8,7 +8,7 @@ import './TeamBuilding.css';
 
 import "swiper/css";
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 import star from '../../build/star.png';
 import BookNow from '../BookNow/Main';
@@ -134,13 +134,14 @@ const TeamBuilding = () => {
                     {/* 1 */}
 
                     <Swiper
+                        autoplay={{ delay: 3000 }}
                         pagination={{
                             clickable: true,
                         }}
                         style={{
                             "--swiper-pagination-bullet-inactive-color": "#fff",
                         }}
-                        modules={[Pagination]}
+                        modules={[Pagination, Autoplay]}
                     >
 
                         {reviews.map((info, index) => {

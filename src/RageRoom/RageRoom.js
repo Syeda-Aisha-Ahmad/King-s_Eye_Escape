@@ -39,7 +39,7 @@ const RageRoom = () => {
                 <div>
                     <h1 className="text-white  text-center text-3xl md:text-5xl mt-0 pb-2 pt-5 font-semibold">Our <span className='text-blue-500'>Rage Room</span></h1>
                     <div className="border-gray-200  border-b-4 w-9/12 md:w-7/12 lg:w-40 pt-3 mb-5 self-center xl:w-5/12 xl:mb-6 mx-auto" />
-                    <p className="w-11/12 md:w-3/5 px-3 md:mb-5 text-white text-center text-base md:text-xl md:leading-relaxed mx-auto mb-5">Are you looking for a unique and exhilarating way to let off some steam? Look no further!
+                    <p className="w-11/12 md:w-2/5 px-3 md:mb-5 text-white text-center text-base md:text-xl md:leading-relaxed mx-auto mb-5">Are you looking for a unique and exhilarating way to let off some steam? Look no further!
                     </p>
                     <div className='mt-2 mx-auto text-center mb-5 md:mb-16'>
                         <Link className='text-center mt-2 mb-10' to="/resova">
@@ -55,14 +55,14 @@ const RageRoom = () => {
                         <div className='hidden md:flex flex-col-reverse lg:flex-row mx-5 gap-5 mt-5 md:mt-20 lg:mt-7'>
 
 
-                            <div className='flex lg:flex-row mx-auto items-center lg:w-6/12'>
+                            <div className='flex lg:flex-row mx-auto items-start lg:w-6/12'>
                                 <div className='mx-auto text-center'>
-                                    <p className="text-white md:px-5 lg:pt-10 text-base md:text-xl leading-relaxed mb-7 ">Welcome to the Mental Breakdown: A King's Eye Rage Room experience. Equipped with safety gear and your weapon of choice, come let out your frustrations by smashing and breaking a variety of items. Our rage room provides a cathartic and exhilarating release for anyone seeking a unique and therapeutic outlet. Let the Breakdown begin!
+                                    <p className="text-white md:px-5 text-base md:text-xl leading-relaxed mb-3">Welcome to the Mental Breakdown: A King's Eye Rage Room experience. Equipped with safety gear and your weapon of choice, come let out your frustrations by smashing and breaking a variety of items. Our rage room provides a cathartic and exhilarating release for anyone seeking a unique and therapeutic outlet. Let the Breakdown begin!
                                     </p>
 
                                     <p className="text-white md:px-5 lg:pt-5 text-xl leading-relaxed mb-3 font-bold">What is a Rage Room?</p>
 
-                                    <p className="text-white md:px-5 text-base md:text-xl leading-relaxed mb-7 ">A Rage Room is a specially designed space where you can throw, bash, smash, strike, and break your way to stress-freedom. It's the ultimate relief of letting go, having fun, and smashing things without any consequences.</p>
+                                    <p className="text-white md:px-5 text-base md:text-xl leading-relaxed mb-3 ">A Rage Room is a specially designed space where you can throw, bash, smash, strike, and break your way to stress-freedom. It's the ultimate relief of letting go, having fun, and smashing things without any consequences.</p>
 
                                     <p className="text-white md:px-5 lg:pt-5 text-xl leading-relaxed mb-3 font-bold">Why Choose King’s Eye Escape’s Rage Room?</p>
 
