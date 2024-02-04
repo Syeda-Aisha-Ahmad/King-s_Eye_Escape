@@ -1613,6 +1613,9 @@ input.tab:checked + .tab-content,
 .mb-7 {
   margin-bottom: 1.75rem;
 }
+.ml-20 {
+  margin-left: 5rem;
+}
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -1927,10 +1930,6 @@ input.tab:checked + .tab-content,
 .bg-indigo-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 48 163 / var(--tw-bg-opacity));
-}
-.bg-red-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 .bg-red-600 {
   --tw-bg-opacity: 1;
@@ -2616,10 +2615,6 @@ input.tab:checked + .tab-content,
 
   .lg\:w-9\/12 {
     width: 75%;
-  }
-
-  .lg\:w-full {
-    width: 100%;
   }
 
   .lg\:grid-cols-3 {

@@ -121,7 +121,7 @@ const Main = () => {
             <img className="w-52" src="./Logo.png" alt="King's Eye Logo" />
           </Link>
 
-          <div className="hidden flex-row gap-5 justify-around justify-self-end items-center bg-red-200 w-4/6 md:flex md:p-3 lg:w-full">
+          <div className="hidden flex-row justify-around justify-self-end items-center w-4/6 md:flex md:p-3 lg:w-11/12 ml-20">
             <Link to="/escape_rooms">
               <div className="text-white hover:text-blue-400 transition-all delay-100">
                 Escape Rooms
