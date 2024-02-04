@@ -121,7 +121,7 @@ const Main = () => {
             <img className="w-52" src="./Logo.png" alt="King's Eye Logo" />
           </Link>
 
-          <div className="hidden flex-row gap-5 justify-around justify-self-end items-center w-4/6 md:flex md:p-3 lg:w-8/12">
+          <div className="hidden flex-row gap-5 justify-around justify-self-end items-center bg-red-200 w-4/6 md:flex md:p-3 lg:w-full">
             <Link to="/escape_rooms">
               <div className="text-white hover:text-blue-400 transition-all delay-100">
                 Escape Rooms
@@ -161,7 +161,7 @@ const Main = () => {
             </Link>
 
             {/* new version */}
-            <Link className='text-center' to="/resova">
+            <Link className='text-center mr-4' to="/resova">
               <button className='text-white font-bold navButton mx-auto'>BOOK NOW</button>
             </Link>
 

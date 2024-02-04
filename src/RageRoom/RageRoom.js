@@ -55,7 +55,7 @@ const RageRoom = () => {
                         <div className='hidden md:flex flex-col-reverse lg:flex-row mx-5 gap-5 mt-5 md:mt-20 lg:mt-7'>
 
 
-                            <div className='flex lg:flex-row mx-auto items-start lg:w-6/12'>
+                            <div className='lg:w-6/12 flex lg:flex-row mx-auto items-start '>
                                 <div className='mx-auto text-center'>
                                     <p className="text-white md:px-5 text-base md:text-xl leading-relaxed mb-3">Welcome to the Mental Breakdown: A King's Eye Rage Room experience. Equipped with safety gear and your weapon of choice, come let out your frustrations by smashing and breaking a variety of items. Our rage room provides a cathartic and exhilarating release for anyone seeking a unique and therapeutic outlet. Let the Breakdown begin!
                                     </p>
@@ -71,6 +71,30 @@ const RageRoom = () => {
                                     <Link className='text-center mt-2 mb-10 lg:my-7' to="/resova">
                                         <button className='text-white font-bold myButton mx-auto'>BOOK NOW</button>
                                     </Link>
+
+                                    {/* <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10 md:mt-10 mb-10 md:mb-0 w-full'>
+
+                                        <div className='border-2 border-blue-500 text-white rounded-xl text-base md:text-xl text-center py-5 px-4'>
+                                            <h3 className='text-xl md:text-2xl mb-4 font-semibold'>Customizable Packages</h3>
+                                            <p>Choose from a variety of packages that suit your preferences and budget.</p>
+                                        </div>
+
+                                        <div className='border-2 border-blue-500 text-white rounded-xl text-base md:text-xl text-center py-5 px-4'>
+                                            <h3 className='text-xl md:text-2xl mb-4 font-semibold'>Solo or Group Sessions</h3>
+                                            <p>Whether you want some alone time to release stress or prefer a group activity, we've got you covered.
+                                            </p>
+                                        </div>
+
+                                        <div className='border-2 border-blue-500 text-white rounded-xl text-base md:text-xl text-center py-5 px-4'>
+                                            <h3 className='text-xl md:text-2xl mb-4 font-semibold'>Wide Range of Smashable Items</h3>
+                                            <p>From glass bottles and ceramics to furniture and select items you may want to bring yourself, there will be an array of objects to smash and obliterate.</p>
+                                        </div>
+
+                                        <div className='border-2 border-blue-500 text-white rounded-xl text-base md:text-xl text-center py-5 px-4'>
+                                            <h3 className='text-xl md:text-2xl mb-4 font-semibold'>Variety of Weapon Choices</h3>
+                                            <p>We have variety of weapon choices. Such as Sledgehammers, Golf Clubs, Iron Poles, Bats, etc.</p>
+                                        </div>
+                                    </div> */}
                                 </div>
 
 
@@ -78,7 +102,7 @@ const RageRoom = () => {
 
 
                             <div className='lg:w-6/12'>
-                                <img src={img} alt="/" className="object-contain border-0 lg:overflow-hidden text-center mx-auto flex justify-center w-10/12 gap-20" />
+                                <img src={img} alt="/" className="object-contain border-0 lg:overflow-hidden text-center mx-auto flex justify-center gap-20 w-9/12" />
                             </div>
                         </div>
 
