@@ -68,16 +68,18 @@ const Main = () => {
       <div className="bg-black flex flex-col xl:h-full">
 
         <div className="w-full bg-black flex flex-col justify-center pt-14 pb-10 md:pb-16 background-style">
-          <h1 className="text-white text-center font-semibold text-3xl md:text-5xl xl:text-6xl xl:leading-relaxed">What is an <span className='text-blue-500'>Escape Room?</span></h1>
-          <div className="border-gray-100 border-b-4 w-9/12 md:w-7/12 lg:w-40 py-2 lg:py-0 md:mb-2 self-center xl:w-2/4 xl:mb-2" />
-          <p className='px-5 md:px-10 text-base md:text-xl lg:pt-5 md:py-3 text-white md:w-10/12 text-center mx-auto leading-relaxed hidden md:grid'>Escape rooms are real-life adventures where you and your crew must investigate your surroundings, follow clues, crack codes, solve puzzles, and overcome your challenges. Think of it like a live-action video game, but the clock's ticking (60 minutes).
+          <h1 className="text-white text-center font-semibold text-3xl md:text-5xl xl:text-6xl leading-loose xl:leading-relaxed">
+            <Link to={"/escape_rooms"}>Escape Rooms | </Link>
+            <Link to={"/axe_lounge"}>Axe Throwing | </Link>
+            <Link to={"/rage_room"}>Rage Rooms</Link>
 
-            Ready for a heart-pounding, adrenaline-fueled experience? Team up with friends, family, or co-workers, and immerse yourself in a 60-minute challenge that leads to unlimited possibilities. Can you beat the clock and emerge victorious? Let the escapades begin!
+
+          </h1>
+          {/* <div className="border-gray-100 border-b-4 w-9/12 md:w-7/12 lg:w-40 py-2 lg:py-0 md:mb-2 self-center xl:w-2/4 xl:mb-2" /> */}
+          <p className='px-5 md:px-10 text-base md:text-xl lg:pt-5 md:py-3 text-white md:w-10/12 text-center mx-auto leading-relaxed hidden md:grid'>King's Eye Escape is your one stop shop for entertainment! Be the hero in one of our 5-star rated escape rooms! Learn to throw safely and effectively in our private indoor axe throwing lounge! Smash and bash your way to good mental health in our rage room experience!
           </p>
 
-          <p className='px-5 md:px-10 text-base md:text-xl pt-5 pb-2 md:py-3 text-white md:w-10/12 text-center mx-auto leading-relaxed grid md:hidden lg:hidden'>Escape rooms are real-life adventures where you and your crew must investigate your surroundings, follow clues, crack codes, solve puzzles, and overcome your challenges.
-
-            Ready for a heart-pounding, adrenaline-fueled experience? Immerse yourself in a 60-minute challenge with friends, family or co-workers. Click to book your adventure!
+          <p className='px-5 md:px-10 text-base md:text-xl pt-5 pb-2 md:py-3 text-white md:w-10/12 text-center mx-auto leading-relaxed grid md:hidden lg:hidden'>King's Eye Escape is your one stop shop for entertainment! Be the hero in one of our 5-star rated escape rooms! Learn to throw safely and effectively in our private indoor axe throwing lounge! Smash and bash your way to good mental health in our rage room experience!
           </p>
 
 

@@ -1,0 +1,5 @@
+.background-style-escape {
+    background: linear-gradient(to right, rgba(0, 0, 24, 0.61),
+            rgba(0, 0, 0, 0.705)), url("../../build/TheHarvest.jpeg");
+    background-size: cover;
+}

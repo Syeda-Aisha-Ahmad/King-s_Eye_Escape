@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import img from '../../build/rageroom.jpg';
 import rage1 from '../../build/rage1.jpg';
 import rage2 from '../../build/rage2.jpg'
+import img1 from '../../build/large-1.png'
+import img2 from '../../build/large-2.png'
+import img3 from '../../build/large-3.png'
 import rage3 from '../../build/rage3.jpg'
 import { motion } from 'framer-motion'
 import BookNow from '../BookNow/Main';
@@ -187,11 +190,21 @@ const RageRoom = () => {
                         <p>We have variety of weapon choices. Such as Sledgehammers, Golf Clubs, Iron Poles, Bats, etc.</p>
                     </div>
                 </div>
-                <div className='mt-5 mb-10 text-center'>
+                <div className='mt-5 mb-20 text-center'>
                     <Link className='text-center mt-2 mb-10 lg:my-7' to="/resova">
                         <button className='text-white font-bold myButton mx-auto'>BOOK NOW</button>
                     </Link>
                 </div>
+
+
+
+                <div className=' lg:flex gap-5 justify-center px-5 md:px-10 lg:px-20 my-10'>
+                    <img className='mb-10 mx-auto w-full md:w-10/12' src={img1} alt="" />
+                    <img className='mb-10 mx-auto w-full md:w-10/12' src={img2} alt="" />
+                    <img className='mb-10 mx-auto w-full md:w-10/12' src={img3} alt="" />
+                </div>
+
+
             </div>
             <Link to='/resova'>
                 <BookNow />

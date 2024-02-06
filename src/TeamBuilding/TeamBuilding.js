@@ -8,7 +8,7 @@ import './TeamBuilding.css';
 
 import "swiper/css";
 import 'swiper/css/pagination';
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 
 import star from '../../build/star.png';
 import BookNow from '../BookNow/Main';
@@ -16,6 +16,8 @@ import profile1 from '../../build/profile1.png'
 import profile2 from '../../build/profile2.png'
 import profile3 from '../../build/profile3.png'
 import profile4 from '../../build/profile4.png'
+import arrow1 from '../../build/left-arrow.png'
+import arrow2 from '../../build/right-arrow.png'
 
 const TeamBuilding = () => {
 
@@ -133,75 +135,89 @@ const TeamBuilding = () => {
 
                     {/* 1 */}
 
-                    <Swiper
-                        autoplay={{ delay: 3000 }}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        style={{
-                            "--swiper-pagination-bullet-inactive-color": "#fff",
-                        }}
-                        modules={[Pagination, Autoplay]}
-                    >
+                    <div className='flex items-center'>
+                        <button className="hidden md:grid arrow-right arrow">
+                            <img src={arrow1} alt="" />
+                        </button>
+                        <Swiper
+                            autoplay={{ delay: 3000 }}
+                            pagination={{
+                                clickable: true,
+                            }}
+                            autoHeight={true}
+                            navigation={{
+                                nextEl: ".arrow-left",
+                                prevEl: ".arrow-right"
+                            }}
 
-                        {reviews.map((info, index) => {
-                            return (
+                            style={{
+                                "--swiper-pagination-bullet-inactive-color": "#fff",
+                            }}
+                            modules={[Pagination, Navigation]}
+                        >
 
-                                <SwiperSlide key={index}>
-                                    <div key={index} className={`border-2 border-white py-5 px-5 w-11/12 mx-auto text-justify md:text-left`}>
-                                        <div className='mb-4 flex items-start justify-between'>
-                                            <div className=''>
-                                                <div className='flex justify-between items-center gap-2 mr-4'>
-                                                    <div>
-                                                        <img src={info.profile} className="rounded-full" alt="" />
+                            {reviews.map((info, index) => {
+                                return (
+
+                                    <SwiperSlide key={index}>
+                                        <div key={index} className={`py-5 px-5 w-11/12 mx-auto text-justify md:text-left`}>
+                                            <div className='mb-4 flex items-start justify-between'>
+                                                <div className=''>
+                                                    <div className='flex justify-between items-center gap-2 mr-4'>
+                                                        <div>
+                                                            <img src={info.profile} className="rounded-full" alt="" />
+                                                        </div>
+                                                        <h3 className='text-2xl font-bold mb-2 mt-2 text-white'>{info.name}</h3>
                                                     </div>
-                                                    <h3 className='text-2xl font-bold mb-2 mt-2 text-white'>{info.name}</h3>
+                                                    <div className='flex items-center gap-2 mt-3'>
+                                                        <img className='' src={star} alt="" />
+                                                        <img className='' src={star} alt="" />
+                                                        <img className='' src={star} alt="" />
+                                                        <img className='' src={star} alt="" />
+                                                        <img className='' src={star} alt="" />
+                                                    </div>
                                                 </div>
-                                                <div className='flex items-center gap-2 mt-3'>
-                                                    <img className='' src={star} alt="" />
-                                                    <img className='' src={star} alt="" />
-                                                    <img className='' src={star} alt="" />
-                                                    <img className='' src={star} alt="" />
-                                                    <img className='' src={star} alt="" />
+                                                <div className='absolute absolute-style md:hidden'>
+                                                    <a href="https://m.yelp.com/biz/kings-eye-escape-westminster">
+                                                        <img src="yelp.png" className="h-10 w-auto" />
+                                                    </a>
+                                                </div>
+
+                                                <div className='absolute hidden md:grid right-14'>
+                                                    <a href="https://m.yelp.com/biz/kings-eye-escape-westminster">
+                                                        <img src="yelp.png" className="h-10 w-auto" />
+                                                    </a>
                                                 </div>
                                             </div>
-                                            <div className='absolute absolute-style md:hidden'>
-                                                <a href="https://m.yelp.com/biz/kings-eye-escape-westminster">
-                                                    <img src="yelp.png" className="h-10 w-auto" />
-                                                </a>
+
+
+
+                                            <div className='text-xl mb-10'>
+                                                <p className='p-text-sstyle text-white'>{info.text}</p>
+                                                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 pl-5">
+                                                    {info?.images?.map((img, imgIndex) => (
+                                                        <img key={imgIndex} className="h-auto" src={img} alt={`Review Image ${imgIndex + 1}`} />
+                                                    ))}
+                                                </div>
                                             </div>
 
-                                            <div className='absolute hidden md:grid right-14'>
-                                                <a href="https://m.yelp.com/biz/kings-eye-escape-westminster">
-                                                    <img src="yelp.png" className="h-10 w-auto" />
-                                                </a>
-                                            </div>
-                                        </div>
 
-
-
-                                        <div className={`text-xl ${clicked ? '' : 'h-28 overflow-hidden'}`}>
-                                            <p className='p-text-sstyle text-white'>{info.text}</p>
-                                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 pl-5">
-                                                {info?.images?.map((img, imgIndex) => (
-                                                    <img key={imgIndex} className="h-auto" src={img} alt={`Review Image ${imgIndex + 1}`} />
-                                                ))}
-                                            </div>
-                                        </div>
-
-
-                                        <div className="mt-5 text-blue-500 font-semibold mb-5">
+                                            {/* <div className="mt-5 text-blue-500 font-semibold mb-5">
                                             <button button onClick={() => setClicked(!clicked)}>
                                                 {clicked ? 'Show Less...' : 'Show More...'}
                                             </button>
+                                        </div> */}
                                         </div>
-                                    </div>
-                                </SwiperSlide>
+                                    </SwiperSlide>
 
-                            )
-                        })}
-                    </Swiper>
+                                )
+                            })}
+                        </Swiper>
 
+                        <button className="hidden md:grid arrow-left arrow">
+                            <img src={arrow2} alt="" />
+                        </button>
+                    </div>
 
 
 
