@@ -135,8 +135,8 @@ const TeamBuilding = () => {
 
                     {/* 1 */}
 
-                    <div className='flex items-center'>
-                        <button className="hidden md:grid arrow-right arrow">
+                    <div className='flex items-start'>
+                        <button className="hidden md:grid arrow-right arrow arrow-style">
                             <img src={arrow1} alt="" />
                         </button>
                         <Swiper
@@ -214,7 +214,7 @@ const TeamBuilding = () => {
                             })}
                         </Swiper>
 
-                        <button className="hidden md:grid arrow-left arrow">
+                        <button className="hidden md:grid arrow-left arrow arrow-style">
                             <img src={arrow2} alt="" />
                         </button>
                     </div>

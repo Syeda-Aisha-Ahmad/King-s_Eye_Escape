@@ -18,3 +18,8 @@
 .p-text-sstyle {
     color: white !important;
 }
+
+.arrow-style {
+    position: relative;
+    top: 130px;
+}
